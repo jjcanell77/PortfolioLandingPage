@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Jesse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Jost', sans-serif;
+        transition-duration: 300ms;
+        scroll-behavior: smooth;
+        }
+
+        body {
+            min-width: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #0f172a;
+            color: white;
+        }
+
+        header{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;        
+        }
+
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 4.6rem;
+            user-select: none;
+        }
+        
+        header div {
+            display: flex;
+            gap: 20px;
+            font: 800;
+        }
+
+        header div h1:first-child {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1.5px white;
+        }
+
+        header ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        header ul li {
+            list-style-type: none;
+            font-size: 0.9em;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header ul li::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: white;
+            right: 100%;
+            bottom: 0;
+            transition-duration: 300ms;
+        }
+
+        header ul li:hover::after{
+            transform: translateX(100%);;
+        }
+
+        header a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        section:nth-child(2n) {
+            background: white;
+            color: #0f172a;
+        }
+
+        .section-header {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            position: relative;
+            width: 100%;
+            max-width: 85ch;
+            margin: 0 auto;
+        }
+
+        .section-header::before,
+        .section-header::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #0f172a;
+        }
+
+        .section-header::before {
+            right: 0;
+            top: 0;
+        }
+
+        .section-header::after {
+            left: 0;
+            bottom: 0;
+        }
+
+        section:nth-child(2n + 1) .section-header::before,
+        section:nth-child(2n + 1) .section-header::after{
+            background: white;
+        }
+
+        .section-wrapper {
+            width: 100%;
+            max-width: 75ch;
+            margin: 0 auto;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-content {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 0.8em;
+            text-align: left;
+        }
+
+        .experience-header {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .experience-header h2{
+            font-weight: 500;
+        }
+
+        .experience-subheader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #cbd5e1;
+        }
+
+        .resume-item > p{
+            padding: 2px 0;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Dev</h1>
+            <h1>Jesse</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="#about-me">About me</a>
+            </li>
+            <li>
+                <a  href="#experience">Experience</a>
+            </li>
+            <li>
+                <a  href="#projects">Projects</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <nav></nav>
+        <section id="about-me">
+            <h2 class="section-header">About Me</h2>
+            <div class="section-wrapper">
+                <div class="section-content">
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h2 class="section-header">Experience</h2>
+            <div class="section-wrapper">
+                <div class="section-content">
+                    <div class="resume-item">
+                        <div class="experience-header">
+                            <h2>Full Stack Developer</h2>
+                            <div class="experience-subheader">
+                                <p>AssignRef</p>
+                                <p>Dec 2022 - Present</p>
+                            </div>
+                        </div>
+                        <p>AssignRef: A web application providing official game-day coverage, schedule, and stats for the Liga deFútbol Americano Profesional (LFA).</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="experience-header">
+                            <h2>Full Stack Developer</h2>
+                            <div class="experience-subheader">
+                                <p>AssignRef</p>
+                                <p>Dec 2022 - Present</p>
+                            </div>
+                        </div>
+                        <p>AssignRef: A web application providing official game-day coverage, schedule, and stats for the Liga deFútbol Americano Profesional (LFA).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="section-header">Projects</h2>
+            <div class="section-wrapper">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
