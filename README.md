@@ -7,16 +7,13 @@ Welcome to my Portfolio Landing Page! This page is created using only HTML and C
 - Projects: A showcase of my current projects.
 
 ## Installation
-
-Install my-project with npm
-
-```bash
-    git clone <https://github.com/jjcanell77/PortfolioLandingPage.git>
-    cd GymApp.react
-
-    npm install 
-    npm start
-
+To set up and run the project locally, follow these steps:
 ```
-    Open http://localhost:3000 to view the app in the browser.
-    Or take a look at the live version at: https://jjcanell-portfolio.netlify.app
+git clone https://github.com/jjcanell77/PortfolioLandingPage.git
+```
+Run on live server 
+Open http://localhost:3000 to view the app in the browser.
+Or take a look at the live version at:
+```
+ https://jjcanell-portfolio.netlify.app
+```
